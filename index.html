@@ -3,13 +3,86 @@
     <head>
         <title>Test site using Git and all written from scratch</title>
         <style>
-        
+            html {
+                padding:0;
+                margin:0;
+            }
+            body {
+                padding:0;
+                margin:0;
+                background-image: url("Images/bg.jpg");
+                background-attachment: fixed;
+                font-family: sans-serif;
+                
+            }
+            #first {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #menu {
+                flex:1;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .marg {
+                margin-right: 30px;
+                margin-left: 30px;
+            }
+            .space {
+                flex:1;
+            }
+            .menuItem {
+                flex:1;
+                display: flex;
+                align-items:center;
+            }
+            .space {
+                flex:2;
+            }
+            a {
+                flex:1;
+                text-decoration: none;
+                color: #FFF;
+                font-weight: bold;
+                
+            }
+            
+            .jumbotron {
+                flex:2;
+                margin-left: 200px;
+            }
+            
         </style>
     </head>
     
     <body>
         
+        <section id="first">
+            <div id="menu" class="marg">
+                <div class="space"></div>
+                <div class="menuItem">
+                    <div class="space"></div>
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Projects</a>
+                    <a href="">Team</a>
+                    <a href="">Contact Us</a>
+                </div>
+                <div class="space"></div>
+            </div>
+            <div class="jumbotron marg">
+                <h3 class="jumboTitle">That is what we are doing</h3>
+                <p class="text">
+                We are delighted to introduce you our new restaurant we fully and only collection of hoght quality foods.
+                </p>
+                <button class="seeMore">Read More</button>
+            </div>
+            
         
+        </section>
         
         <script>
         
